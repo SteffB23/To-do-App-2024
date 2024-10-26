@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.task-item {
+  @apply flex items-center gap-4 p-4 border border-gray-100 rounded-lg mb-2 animate-slideIn;
+}
+
+.task-item:hover {
+  @apply bg-gray-50;
+}
+
+.checkbox {
+  @apply w-5 h-5 border-2 border-gray-300 rounded-full cursor-pointer transition-all;
+}
+
+.checkbox.checked {
+  @apply bg-black border-black animate-checkmark;
+}
+
+.priority-indicator {
+  @apply w-2 h-2 rounded-full;
+}
+
+.priority-low {
+  @apply bg-gray-400;
+}
+
+.priority-medium {
+  @apply bg-yellow-500;
+}
+
+.priority-high {
+  @apply bg-red-500;
+}
+
+.loading {
+  @apply animate-pulse bg-gray-200;
+}
